@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trang giới thiệu nhóm học sinh đầy nhiệt huyết và sáng tạo với các thành viên tài năng.">
+    <meta name="keywords" content="giới thiệu nhóm, học sinh, sáng tạo, nhiệt huyết">
+    <title>Dream Team - Nhóm Học Sinh Sáng Tạo</title>
+    <style>
+        /* Phong cách toàn trang */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #f0f8ff, #add8e6, #0078d7);
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        /* Tiêu đề động */
+        header {
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            animation: fadeIn 3s ease-out;
+        }
+        header p {
+            margin: 10px 0 0;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Menu cố định */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 120, 215, 0.8);
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        /* Nội dung từng phần */
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .member {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .member:hover {
+            transform: scale(1.05);
+        }
+        .member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .member-details {
+            flex: 1;
+        }
+        .member-details strong {
+            color: #0078d7;
+        }
+
+        /* Quay lại đầu trang */
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #0078d7;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50%;
+            font-size: 18px;
+            cursor: pointer;
+            z-index: 100;
+            display: none;
+        }
+        .back-to-top:hover {
+            background-color: #005bb5;
+        } 
+		.image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Đảm bảo mỗi hình ảnh có chiều rộng tối thiểu 150px */
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .image-grid img {
+            width: 100%;
+            height: 150px; /* Chiều cao cố định cho ảnh */
+            object-fit: contain; /* Giữ tỷ lệ ảnh mà không làm méo */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-grid img:hover {
+            transform: scale(1.05); /* Phóng to khi hover */
+        }
+
+        /* Cập nhật phần video */
+        .video-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Video có chiều rộng tối thiểu là 250px */
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .video-list video, .video-list iframe {
+            width: 100%;
+            height: 200px; /* Chiều cao video */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+   </style>
+</head>
+<body>
+
+<!-- Tiêu đề trang -->
+<header>
+    <h1>Nhóm mệt mỏi vì học giỏi</h1>
+    <p>Chúng em là những học sinh đầy nhiệt huyết và sáng tạo!</p>
+</header>
+
+<!-- Thanh Menu Cố Định -->
+<nav>
+    <a href="#thanh-vien">Thành viên</a>
+    <a href="#hinh-anh">Hình ảnh</a>
+    <a href="#video">Video</a>
+</nav>
+
+<section id="thanh-vien">
+    <h2>Thành viên nhóm</h2>
+    <div class="member">
+        <img src="https://assets.onecompiler.app/42zww9fs7/432g3zzf6/z6109986616568_064194f91f4ad5dbc994d59ba621c01f.jpg" alt="Phạm Thành Đạt">
+        <div class="member-details">
+            <strong>Phạm Thành Đạt</strong><br>
+            - Lớp trưởng năng động, luôn đi đầu trong các hoạt động của lớp.<br>
+            - Sở thích âm nhạc, nấu ăn. <br>
+			- Là người vui vẻ, tích cực.<br>
+			- Cung: Song tử. <br>
+            <a href="https://www.facebook.com/ph.thanhdat?mibextid=ZbWKwL" target="_blank">Facebook</a>
+        </div>
+    </div>
+    <div class="member">
+        <img src="https://assets.onecompiler.app/42zww9fs7/42zzxhuzc/thth.jpg" alt="Nguyễn Trương Thiên Trường">
+        <div class="member-details">
+            <strong>Nguyễn Trương Thiên Trường</strong><br>
+            - Bí thư chi Đoàn, thích tham gia các hoạt động thiện nguyện.<br>
+            - Đam mê học toán, thích chơi game và tìm tòi những điều mới.<br>
+            - Tính cách: Trầm tính, ít nói.<br>
+            - Cung: Song Tử.<br>
+            <a href="https://www.facebook.com/profile.php?id=100072289980309" target="_blank">Facebook</a>
+        </div>
+    </div>
+    <div class="member">
+        <img src="https://assets.onecompiler.app/42zww9fs7/432g3zzf6/z6107620364751_ecfa4e1a5327e980ae9a8dc6a0c51c5b.jpg" alt="Lê Văn Trọng">
+        <div class="member-details">
+           <strong>Lê Văn Trọng</strong><br>
+                - Thích học môn Toán và Văn.<br>
+                - Thường xuyên tham gia các hoạt động tập thể và thể thao.<br>
+                - Tính cách: Hoạt bát, năng động.<br>
+				- Đặt biệt: thích hóng drama.<br>
+				- Cung: sư Tử.<br>
+                <a href="https://www.facebook.com/profile.php?id=100083649601673&mibextid=ZbWKwL" target="_blank">Facebook</a>
+            </div>
+        </div>
+        <div class="member">
+            <img src="https://assets.onecompiler.app/42zww9fs7/432g3zzf6/z6109219632731_822b91e87f4375515f7e219e38efe883.jpg" alt="Nguyễn Tấn Ngọc">
+            <div class="member-details">
+                <strong>Nguyễn Tấn Ngọc</strong><br>
+               - Thích cầu lông và bóng chuyền.<br>
+			   - Hay tham gia các hoạt động tập thể của lớp.<br>
+			   - Là người dễ gần,vui vẻ,hòa đồng.<br>
+               - Cung: Cự Giải.<br>    
+                <a href="https://www.facebook.com/profile.php?id=100082904041565&mibextid=kFxxJD" target="_blank">Facebook</a>
+            </div>
+        </div>
+        <div class="member">
+            <img src="https://assets.onecompiler.app/42zww9fs7/432guyse3/z6111328870347_db972b4d30f00040de0be0f57ffd771f.jpg" alt="Huỳnh Quốc Đoan">
+            <div class="member-details">
+                <strong>Huỳnh Quốc Đoan</strong><br>
+               - Thích tham gia các học động tập thể và thể thao,đam mê bóng chuyền.<br>
+			   - Là người hoạt bát, năng động. <br>
+			   - Cung song ngư.<br>
+			   - Đặc biệt thích live tik tok.<br>
+                <a href="https://www.facebook.com/share/q2kWsbraghU6pVgA/?mibextid=LQQJ4d" target="_blank">Facebook</a>
+            </div>
+        </div>
+        <div class="member">
+            <img src="https://assets.onecompiler.app/42zww9fs7/432guyse3/z6111791848590_aa3ba19331a853602445ccc3c8aaf987.jpg" alt="Phạm Thành Phú">
+            <div class="member-details">
+                <strong>Phạm Thành Phú</strong><br>
+                - Yêu thích âm nhạc và bóng chuyền.<br>
+                - Là người năng động, cá tính.<br>
+                - Cung: Kim Ngưu.<br>
+                <a href="https://www.facebook.com/share/1E4y5qsEi3/?mibextid=LQQJ4d" target="_blank">Facebook</a>
+            </div>
+         </div>
+		 <div class="member">
+            <img src="https://assets.onecompiler.app/42zww9fs7/432g3zzf6/z6109849060665_3cb4c7d3987bec766043f11eb4ca2e6d.jpg" alt="Vũ Văn G">
+            <div class="member-details">
+                <strong>Đỗ Hồng Thuận </strong><br>
+                - Thích học môn sử và địa.<br>
+				- Thích thể thao và các hoạt động chung tập thể .<br>
+				- Là người chủ động , năng động ,hoà đồng vui vẻ với mọi người.<br>
+				- Cung: Sư Tử. <br>
+                <a href="https://www.facebook.com/profile.php?id=100038119545305&mibextid=ZbWKwL" target="_blank">Facebook</a>
+            </div>
+		</div>
+    </section>
+
+   <section id="hinh-anh">
+    <h2>Bộ Sưu Tập Hình Ảnh</h2>
+    <div class="image-grid">
+        <img src="https://assets.onecompiler.app/42zww9fs7/432g5mjuf/z6109505734877_e124375ebe65d11df8d3b8ede5e133d9.jpg" alt="Hình 1">
+        <img src="https://assets.onecompiler.app/42zww9fs7/432guyse3/z6111791868885_c3caec7e4d8433cdf55dd10cd0775274.jpg" alt="Hình 2">
+        <img src="https://assets.onecompiler.app/42zww9fs7/432guyse3/z6111791871523_84df705b8a32d01ba289f14a810c6b53.jpg" alt="Hình 3">
+        <img src="image4.jpg" alt="Hình 4">
+        <!-- Thêm hình ảnh mới tại đây -->
+    </div>
+</section>
+
+<!-- Phần Video -->
+<section id="video">
+    <h2>Thước Phim của nhóm</h2>
+    <div class="video-list">
+        <video controls>
+            <source src="video1.mp4" type="video/mp4">
+            Trình duyệt của bạn không hỗ trợ video.
+        </video>
+        <video controls>
+            <source src="video2.mp4" type="video/mp4">
+            Trình duyệt của bạn không hỗ trợ video.
+        </video>
+        <iframe src="https://www.youtube.com/embed/video_id1" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/video_id2" frameborder="0" allowfullscreen></iframe>
+        <!-- Thêm video mới tại đây -->
+    </div>
+</section>
+
+<!-- Quay lại đầu trang -->
+<div class="back-to-top" onclick="scrollToTop()">↑</div>
+
+<script>
+    // Hiệu ứng quay lại đầu trang
+    window.onscroll = function() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            document.querySelector(".back-to-top").style.display = "block";
+        } else {
+            document.querySelector(".back-to-top").style.display = "none";
+        }
+    };
+
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+</script>
+</body>
+</html>
